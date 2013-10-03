@@ -9,10 +9,4 @@ feature "Feature: Manage todos" do
 
     expect(page).to have_css('li.todo'), text: 'Buy some milk'
   end
-
-  def sign_in
-    visit root_path
-    fill_in 'Email address', with: 'person@example.com'
-    click_button 'Sign In'
-  end
 end
