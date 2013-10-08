@@ -9,6 +9,7 @@ class TodosController < ApplicationController
 
   def create
     @todo = Todo.new(params[:todo])
+    @todo.user = current_user
     @todo.save
     redirect_to todos_url
   end

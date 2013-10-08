@@ -20,6 +20,6 @@ feature "Feature: Manage todos" do
     click_button 'Create todo'
 
     expect(page).to have_css 'li.todo', text: 'Buy some milk'
-    expect(page).not_to have_css 'li.todo', text: 'Buy some milk'
+    expect(page).not_to have_css 'li.todo', text: 'Buy some eggs'
   end
 end
