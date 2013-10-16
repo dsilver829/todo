@@ -16,3 +16,4 @@
 .idea
 .envrc
 bin/*
+coverage/
